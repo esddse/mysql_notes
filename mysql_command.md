@@ -141,4 +141,24 @@ e.g.
 alter table students rename workmates;
 ```
 
+*** 
+附: ``WHERE``表达式运算符说明
 
+|运算符|说明|
+|:---:|:--:|
+|=|等于|
+|!=|不等于，某些数据库系统也写作 <> |
+|>|大于|
+|<|小于|
+|>=|大于等于|
+|<=|小于等于|
+|BETWEEN ... AND ... | 介于某个范围之内，例：WHERE age BETWEEN 20 AND 30 |
+|NOT BETWEEN ... AND ... | 不在某个范围之内 |
+|IN(项1,项2,...)|在指定项内，例：WHERE city IN('beijing','shanghai')|
+|NOT IN(项1,项2,...)	|不在指定项内|
+|LIKE|搜索匹配，常与模式匹配符配合使用|
+|NOT LIKE|LIKE的反义|
+|IS NULL|空值判断符|
+|IS NOT NULL|非空判断符|
+|NOT、AND、OR|逻辑运算符，分别表示否、并且、或，用于多个逻辑连接 优先级：NOT > AND > OR|
+|%|模式匹配符，表示任意字串，例：WHERE username LIKE '%user'|
